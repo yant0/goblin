@@ -1,0 +1,9 @@
+{{- define "main" -}}
+{{- if .IsPage -}}
+<header>
+    <h1>{{- .Title}}</h1>
+    {{- partial "tags" . -}}
+</header>
+{{- end -}}
+{{- .Content -}}
+{{- end -}}
