@@ -1,0 +1,12 @@
+# Parameter for your site. copy this to a new file titled hugo.toml next to config.toml
+# to take over precedence and if you dont want to mess with git submodule.
+
+[params]
+    [params.footer]
+    # github = "https://gihtub.com"
+    # youtube = "https://youtube.com"
+    # instagram = "https://instagram.com"
+    # linkedin = "https://linkedin.com"
+
+    [params.nav]
+    use_content = true
