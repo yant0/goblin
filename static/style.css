@@ -1,7 +1,7 @@
 * {
     --line: calc(1em + 0.5rem);
-    --link: yellowgreen;
-    --link-alt: seagreen;
+    --link: seagreen;
+    --link-alt: yellowgreen;
     --neutral: #141414;
     --neutral-alt: #222;
 
@@ -76,12 +76,8 @@ ul {
 a {
     color: var(--link);
 
-    &:visited {
-        color: var(--link-alt);
-    }
-
     &:hover, &:active, &:focus, &:target {
-        color: var(--link);
+        color: var(--link-alt);
     }
 }
 
