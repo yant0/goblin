@@ -5,6 +5,7 @@
         {{ if .Site.Params.nav.use_content }}
         {{ range .Sections }} / <a href="{{- .RelPermalink }}">{{- .Title | lower }}</a> {{ end }}
         {{ end }}
+        {{ else if eq .BundleType "leaf" }} {{- printf "%s%s" ( .Title | lower ) ( path.Ext . ) -}}
         {{ else if .IsPage }} {{- path.Base . -}}
         {{ else }} <a href="{{- .RelPermalink }}">{{- .Title | lower }}</a> {{ end -}}
     </h1>
