@@ -1,8 +1,10 @@
 <nav>
     <h1>
         {{- range .Ancestors.Reverse }} <a href="{{- .RelPermalink }}">{{ .LinkTitle | lower }}</a> / {{ end -}}
-        {{- if not (or .IsHome .IsSection ) }}{{- path.Base . -}}
-        {{- else }} <a href="{{- .RelPermalink }}">{{- .Title | lower}}</a> {{ end -}}
+        {{ if .IsHome}} <a href="{{- .RelPermalink }}">{{- .Title | lower }}</a>
+        {{ range .Sections }} / <a href="{{- .RelPermalink }}">{{- .Title | lower }}</a> {{ end }}
+        {{ else if .IsPage }} {{- path.Base . -}}
+        {{ else }} <a href="{{- .RelPermalink }}">{{- .Title | lower }}</a> {{ end -}}
     </h1>
     <hr>
 </nav>

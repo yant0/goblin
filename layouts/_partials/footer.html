@@ -1,4 +1,6 @@
 <footer>
     <hr>
-    <a href="http://example.com">about</a>
+    {{ range $key, $value := $.Site.Params.footer }}
+    <a href="{{ $value }}">{{ $key }}</a>
+    {{ end }}
 </footer>
