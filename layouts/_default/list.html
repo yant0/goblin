@@ -3,7 +3,6 @@
 <ul>
 	{{- range .Pages }}
 	<li>
-		<time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "02 Jan 2006" }}</time> &ndash;
 		<a href="{{ .RelPermalink }}">{{ .Title | lower }}</a>
 	</li>
 	{{- end }}
