@@ -34,8 +34,19 @@ header {
     margin-bottom: var(--line);
 }
 
-pre, code {
-    line-height: 100% !important;
+pre {
+    line-height: 100%;
+    padding: 4px;
+    margin-inline-end: 8px;
+
+    code {
+        line-height: 100%;
+    }
+}
+
+p>code {
+    background-color: var(--neutral-alt);
+    padding: 4px;
 }
 
 hr {
