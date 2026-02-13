@@ -3,7 +3,7 @@
     --link: seagreen;
     --link-alt: yellowgreen;
     --neutral: #141414;
-    --neutral-alt: #222;
+    --neutral-alt: #6662;
 
     :not(code) {
         font-family: system-ui, 'Helvetica Neue', sans-serif;
