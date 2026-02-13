@@ -42,6 +42,7 @@ pre {
     line-height: 100%;
     padding: 4px;
     margin-inline-end: 8px;
+    overflow: auto;
 
     code {
         line-height: 100%;
