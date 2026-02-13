@@ -23,6 +23,10 @@ a[id^=tag] {
     padding: 4px;
     color: var(--link) !important;
     margin-inline-end: 8px;
+
+    &:hover, &:active, &:focus, &:target {
+        color: var(--link-alt);
+    }
 }
 
 header {
