@@ -1,5 +1,7 @@
 # Parameter for your site. copy this to a new file titled hugo.toml next to config.toml
 # to take over precedence and if you dont want to mess with git submodule.
+# IF you have a folder structure like assets/Hello World/image.jpg
+# set disablePathToLower: true
 
 [params]
     [params.footer]

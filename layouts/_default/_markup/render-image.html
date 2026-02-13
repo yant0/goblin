@@ -1,5 +1,7 @@
 {{/*  https://github.com/zoni/obsidian-export/issues/8#issuecomment-774521792  */}}
 {{/*  Try saving without formatting incase doesnt work  */}}
+{{/*  IF you have a folder structure like assets/Hello World/image.jpg  */}}
+{{/*  set disablePathToLower: true  */}}
 
 {{- $url := urls.Parse .Destination -}}
 {{- $scheme := $url.Scheme -}}
