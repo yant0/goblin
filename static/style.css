@@ -49,6 +49,10 @@ p>code {
     padding: 4px;
 }
 
+table {
+    margin-bottom: var(--line);
+}
+
 hr {
     opacity: 20%;
 }
